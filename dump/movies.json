@@ -1,0 +1,730 @@
+{
+    "_id": {
+        "$oid": "62b7a17aeec11b34a062e078"
+    },
+    "title": "Fast and the furious 9",
+    "awards": [],
+    "numberOfDirectors": 3,
+    "__v": 0,
+    "image": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-8885583834.jpg",
+    "description": "asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf "
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fdf"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fe2"
+    },
+    "title": "Kasanova",
+    "image": "https://yts.mx/assets/images/movies/kasanova_2019/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fe3"
+    },
+    "title": "The Lady Vanishes",
+    "image": "https://yts.mx/assets/images/movies/the_lady_vanishes_2013/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fe6"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fe8"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fe9"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997fea"
+    },
+    "title": "Diamond Dust",
+    "image": "https://yts.mx/assets/images/movies/diamond_dust_2018/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997feb"
+    },
+    "title": "hyh#Unknown",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 1,
+    "awards": [],
+    "description": "this is the movie description",
+    "numberOfDirectors": 15
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997ff0"
+    },
+    "title": "Noise",
+    "image": "https://yts.mx/assets/images/movies/noise_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd12d8e299b5a512997ff1"
+    },
+    "title": "Ox-Head Village",
+    "image": "https://yts.mx/assets/images/movies/ox_head_village_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997ff2"
+    },
+    "title": "Secrets of the Oligarch Wives",
+    "image": "https://yts.mx/assets/images/movies/secrets_of_the_oligarch_wives_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997ff3"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg",
+    "__v": 1,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0f3f95dea03e67b737bc3"
+            }
+        }
+    ],
+    "description": "dsfsdf pdf pdf pdf pdf pdf pdf pdf ",
+    "numberOfDirectors": 3
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997ffa"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997ffc"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997ffd"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512997fff"
+    },
+    "title": "PDF 2342",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 6,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822c9"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822ca"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822cb"
+            }
+        }
+    ],
+    "numberOfDirectors": 18,
+    "description": "asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf "
+}
+{
+    "_id": {
+        "$oid": "62bd139fe299b5a512998004"
+    },
+    "title": "Noise 2",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/z5oKgNC9S4DS6Bay78Aoy5aLO4s/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/26/813/n/1922283/055dc333c3280d59_BeautyAndTheBeast58726d5b9fac8/i/Beauty-Beast-2017-Movie-Posters.jpg",
+    "__v": 10,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed2"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed3"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed4"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed5"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed6"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed7"
+            }
+        }
+    ],
+    "numberOfDirectors": 12,
+    "description": "The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: \"Black\". Need to add an extra pop of color to your outfit"
+}
+{
+    "_id": {
+        "$oid": "62cb4594502c50d6049635fa"
+    },
+    "title": "HOME ALONE",
+    "image": "https://i5.walmartimages.com/asr/d799aa59-6cd0-4327-ae24-e3e5823f12c5_1.2bb840e99dca2df7bc64337a7523112b.jpeg",
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb4e49502c50d604963613"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb4e49502c50d604963614"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb4e49502c50d604963615"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb4e49502c50d604963616"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb4e49502c50d604963617"
+            }
+        }
+    ],
+    "numberOfDirectors": 12,
+    "description": "The lorem ipsum is based on De finibus bonorum et malorum, a Latin text written by Cicero in 45 BC. Typographers and printers have used passages from this work for formatting since the 16th century. Many words have been added or modified over the centuries. As a result, the lorem ipsum is no longer considered Latin, even though it looks a lot like it.",
+    "__v": 1
+}
+{
+    "_id": {
+        "$oid": "62cb8d26f49f7acbbe24bcff"
+    },
+    "title": "sdfsdfsdf pdf pdf ",
+    "image": "data:image/jpeg;base64,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",
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb8d26f49f7acbbe24bd00"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb8d26f49f7acbbe24bd01"
+            }
+        }
+    ],
+    "numberOfDirectors": 3,
+    "description": "The lorem ipsum is based on De finibus bonorum et malorum, a Latin text written by Cicero in 45 BC. Typographers and printers have used passages from this work for formatting since the 16th century. Many words have been added or modified over the centuries. As a result, the lorem ipsum is no longer considered Latin, even though it looks a lot like it.",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fdf"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fe2"
+    },
+    "title": "Kasanova",
+    "image": "https://yts.mx/assets/images/movies/kasanova_2019/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997ff0"
+    },
+    "title": "Noise",
+    "image": "https://yts.mx/assets/images/movies/noise_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997ff1"
+    },
+    "title": "Ox-Head Village",
+    "image": "https://yts.mx/assets/images/movies/ox_head_village_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997ff2"
+    },
+    "title": "Secrets of the Oligarch Wives",
+    "image": "https://yts.mx/assets/images/movies/secrets_of_the_oligarch_wives_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fe6"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997ffa"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997ffc"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997ffd"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fe9"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fe3"
+    },
+    "title": "The Lady Vanishes",
+    "image": "https://yts.mx/assets/images/movies/the_lady_vanishes_2013/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fea"
+    },
+    "title": "Diamond Dust",
+    "image": "https://yts.mx/assets/images/movies/diamond_dust_2018/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42b7a17aeec11b34a062e078"
+    },
+    "title": "Fast and the furious 9",
+    "awards": [],
+    "numberOfDirectors": 3,
+    "__v": 0,
+    "image": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-8885583834.jpg",
+    "description": "asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf "
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997fe8"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "42bd12d8e299b5a512997feb"
+    },
+    "title": "hyh#Unknown",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 1,
+    "awards": [],
+    "description": "this is the movie description",
+    "numberOfDirectors": 15
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997fff"
+    },
+    "title": "PDF 2342",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 6,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822c9"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822ca"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822cb"
+            }
+        }
+    ],
+    "numberOfDirectors": 18,
+    "description": "asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf "
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512998004"
+    },
+    "title": "Noise 2",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/z5oKgNC9S4DS6Bay78Aoy5aLO4s/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/26/813/n/1922283/055dc333c3280d59_BeautyAndTheBeast58726d5b9fac8/i/Beauty-Beast-2017-Movie-Posters.jpg",
+    "__v": 10,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed2"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed3"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed4"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed5"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed6"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed7"
+            }
+        }
+    ],
+    "numberOfDirectors": 12,
+    "description": "The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: \"Black\". Need to add an extra pop of color to your outfit"
+}
+{
+    "_id": {
+        "$oid": "42bd139fe299b5a512997ff3"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg",
+    "__v": 1,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0f3f95dea03e67b737bc3"
+            }
+        }
+    ],
+    "description": "dsfsdf pdf pdf pdf pdf pdf pdf pdf ",
+    "numberOfDirectors": 3
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fe6"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fe8"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fea"
+    },
+    "title": "Diamond Dust",
+    "image": "https://yts.mx/assets/images/movies/diamond_dust_2018/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fe2"
+    },
+    "title": "Kasanova",
+    "image": "https://yts.mx/assets/images/movies/kasanova_2019/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32b7a17aeec11b34a062e078"
+    },
+    "title": "Fast and the furious 9",
+    "awards": [],
+    "numberOfDirectors": 3,
+    "__v": 0,
+    "image": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-8885583834.jpg",
+    "description": "asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf asdfasdfasdfasdf "
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fe9"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fdf"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997fe3"
+    },
+    "title": "The Lady Vanishes",
+    "image": "https://yts.mx/assets/images/movies/the_lady_vanishes_2013/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997feb"
+    },
+    "title": "hyh#Unknown",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 1,
+    "awards": [],
+    "description": "this is the movie description",
+    "numberOfDirectors": 15
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997ff1"
+    },
+    "title": "Ox-Head Village",
+    "image": "https://yts.mx/assets/images/movies/ox_head_village_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd12d8e299b5a512997ff0"
+    },
+    "title": "Noise",
+    "image": "https://yts.mx/assets/images/movies/noise_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997ffa"
+    },
+    "title": "Deliver by Christmas",
+    "image": "https://yts.mx/assets/images/movies/deliver_by_christmas_2020/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997ff2"
+    },
+    "title": "Secrets of the Oligarch Wives",
+    "image": "https://yts.mx/assets/images/movies/secrets_of_the_oligarch_wives_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997ffc"
+    },
+    "title": "Irish Jam",
+    "image": "https://yts.mx/assets/images/movies/irish_jam_2006/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997ffd"
+    },
+    "title": "A Tear in the Sky",
+    "image": "https://yts.mx/assets/images/movies/a_tear_in_the_sky_2022/large-cover.jpg"
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997ff3"
+    },
+    "title": "Endangered",
+    "image": "https://yts.mx/assets/images/movies/endangered_2022/large-cover.jpg",
+    "__v": 1,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0f3f95dea03e67b737bc3"
+            }
+        }
+    ],
+    "description": "dsfsdf pdf pdf pdf pdf pdf pdf pdf ",
+    "numberOfDirectors": 3
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512997fff"
+    },
+    "title": "PDF 2342",
+    "image": "https://yts.mx/assets/images/movies/unknown_2021/large-cover.jpg",
+    "__v": 6,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822c9"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822ca"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62cb69574d2956cabfb822cb"
+            }
+        }
+    ],
+    "numberOfDirectors": 18,
+    "description": "asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf asdfsdfadsf "
+}
+{
+    "_id": {
+        "$oid": "32bd139fe299b5a512998004"
+    },
+    "title": "Noise 2",
+    "image": "https://media1.popsugar-assets.com/files/thumbor/z5oKgNC9S4DS6Bay78Aoy5aLO4s/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/26/813/n/1922283/055dc333c3280d59_BeautyAndTheBeast58726d5b9fac8/i/Beauty-Beast-2017-Movie-Posters.jpg",
+    "__v": 10,
+    "awards": [
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed2"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed3"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed4"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed5"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed6"
+            }
+        },
+        {
+            "title": "Oscar award",
+            "year": 2021,
+            "_id": {
+                "$oid": "62c0bffd5db82e78314caed7"
+            }
+        }
+    ],
+    "numberOfDirectors": 12,
+    "description": "The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: \"Black\". Need to add an extra pop of color to your outfit"
+}
