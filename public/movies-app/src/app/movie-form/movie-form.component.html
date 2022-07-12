@@ -1,0 +1,152 @@
+<div class="bg-white">
+  <div>
+    <!-- Product info -->
+    <div
+      class="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8"></div>
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+          {{ movieId ? "Update" : "Create" }} movie
+        </h1>
+      </div>
+
+      <!-- Options -->
+      <div class="mt-4 lg:mt-0 lg:row-span-3">
+        <div class="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
+          <img src="{{ movieForm.value?.image }}"
+            onError="this.src='https://cringemdb.com/img/movie-poster-placeholder.png'"
+            class="w-full h-full object-center object-cover" />
+        </div>
+      </div>
+
+      <div class="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <form [formGroup]="movieForm" (ngSubmit)="onAddMovie()">
+          <div class="shadow sm:rounded-md sm:overflow-hidden">
+            <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="col-span-3 sm:col-span-2">
+                  <label for="company-website" class="block text-sm font-medium text-gray-700">Movie Title</label>
+                  <div class="mt-1 flex rounded-md shadow-sm">
+                    <input type="text" formControlName="title" id="company-website"
+                      class="focus:ring-green-500 focus:border-green-500 flex-1 block w-full rounded sm:text-sm border border-gray-200 p-2"
+                      placeholder="Harry Potter 2022" />
+                  </div>
+                  <div
+                    *ngIf="movieFormControls?.['title']?.invalid && (movieFormControls?.['title']?.dirty || movieFormControls?.['title']?.touched||submitted)"
+                    class="alert alert-danger">
+                    <div class="text-rose-500 text-xs mt-2" *ngIf="movieFormControls?.['title']?.errors?.['required']">
+                      Movie title is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-3 sm:col-span-2">
+                  <label for="company-website" class="block text-sm font-medium text-gray-700">Movie Number Of
+                    Directors</label>
+                  <div class="mt-1 flex rounded-md shadow-sm">
+                    <input type="number" formControlName="numberOfDirectors" id="company-website"
+                      class="focus:ring-green-500 focus:border-green-500 flex-1 block w-full rounded sm:text-sm border border-gray-200 p-2"
+                      placeholder="5" />
+                  </div>
+                  <div
+                    *ngIf="movieFormControls?.['numberOfDirectors']?.invalid && (movieFormControls?.['numberOfDirectors']?.dirty || movieFormControls?.['numberOfDirectors']?.touched||submitted)"
+                    class="alert alert-danger">
+                    <div class="text-rose-500 text-xs mt-2"
+                      *ngIf="movieFormControls?.['numberOfDirectors']?.errors?.['required']">
+                      Movie number of directors is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-3 sm:col-span-2">
+                  <label for="company-website" class="block text-sm font-medium text-gray-700">
+                    Movie Image
+                  </label>
+                  <div class="mt-1 flex rounded-md shadow-sm">
+                    <span
+                      class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                      https://
+                    </span>
+                    <input type="text" formControlName="image" name="company-website" id="company-website"
+                      class="focus:ring-green-500 focus:border-green-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border border-gray-200 p-2"
+                      placeholder="www.example.com" />
+                  </div>
+                  <div
+                    *ngIf="movieFormControls?.['image']?.invalid && (movieFormControls?.['image']?.dirty || movieFormControls?.['image']?.touched||submitted)"
+                    class="alert alert-danger">
+                    <div class="text-rose-500 text-xs mt-2" *ngIf="movieFormControls?.['image']?.errors?.['required']">
+                      Movie image is required.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="about" class="block text-sm font-medium text-gray-700">
+                  Movie Description
+                </label>
+                <div class="mt-1">
+                  <textarea id="about" name="about" rows="3" formControlName="description"
+                    class="shadow-sm p-2 focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                    placeholder="you@example.com"></textarea>
+                </div>
+                <div
+                  *ngIf="movieFormControls?.['description']?.invalid && (movieFormControls?.['description']?.dirty || movieFormControls?.['description']?.touched||submitted)"
+                  class="alert alert-danger">
+                  <div class="text-rose-500 text-xs mt-2" *ngIf="movieFormControls?.['description']?.errors?.['required']">
+                    Movie description is required.
+                  </div>
+                </div>
+                <p class="mt-2 text-sm text-gray-500">
+                  Brief description for the Movie.
+                </p>
+              </div>
+              <label class="block text-md font-medium text-gray-700">Awards</label>
+              <button (click)="addAward()" type="button"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Add new award
+              </button>
+              <div formArrayName="awards">
+                <div *ngFor="let awardForm of awards.controls; let i = index">
+                  <div [formGroupName]="i">
+                    <div class="grid grid-rows-end grid-flow-col gap-4">
+                      <div class="mt-2 row-span-2 col-span-2 sm:col-span-2">
+                        <label for="company-website" class="block text-sm font-medium text-gray-700">
+                          Award Title</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                          <input type="text" formControlName="title"
+                            class="focus:ring-green-500 focus:border-green-500 flex-1 block w-full rounded sm:text-sm border border-gray-200 p-2"
+                            placeholder="Oscar  {{ i }}" />
+                        </div>
+                      </div>
+                      <div class="row-span-3 mt-2 sm:col-span-2">
+                        <label for="company-website" class="block text-sm font-medium text-gray-700">Award Year</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                          <input type="text" min="1900" max="2099" step="1" formControlName="year"
+                            class="focus:ring-green-500 focus:border-green-500 flex-1 block w-full rounded sm:text-sm border border-gray-200 p-2"
+                            placeholder="1994" />
+                        </div>
+                      </div>
+
+                      <div class="row-span-3 mt-2 sm:col-span-2  object-center  items-center flex">
+                        <button (click)="deleteAward(i)"
+                          class="mt-2 inline-flex mt-4 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-rose-500 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                          Delete award
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button type="submit"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
