@@ -17,6 +17,6 @@ export class UsersDataService {
 
   login(loginCredentials: Credentials) {
     const url = environment.users_base_url + '/login';
-    return this._http.post<Credentials>(url, loginCredentials);
+    return this._http.post<string>(url, loginCredentials);
   }
 }

@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const jwt = require('jsonwebtoken');
-
+const util = require('util')
 const response = require("../helpers/response");
 const { getObjectWithFields } = require("../helpers");
 
@@ -31,12 +31,11 @@ const _checkUserPassword = (password, user) => {
       return matched ? resolve(user) : reject(process.env.PASSOWRD_VALIDATION_MSG)
     }).catch(e => reject(e))
   })
-
 }
 
-const _generateToken = (user) => {
-  const token = jwt.sign({ name: user.name }, progess.env.JWT_PRIVATE_KEY, { expiresIn: 3000 });
-  return token;
+const _generateToken = (user) => { 
+  const jwtSign = util.promisify(jwt.sign);
+  return jwtSign({ name: user.name }, process.env.JWT_PRIVATE_KEY, { expiresIn: 3600 });
 }
 
 const registerUser = function (req, res) {
@@ -47,19 +46,21 @@ const registerUser = function (req, res) {
     .then(_createUser)
     .then((user) => response.success(res, process.env.CREATED_STATUS, user))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error))
-};
+}
+
 
 const loginUser = function (req, res) {
   const { username, password } = req.body;
+  console.log(req.body)
   User.findOne({ username })
     .then((user) => _checkUserPassword(password, user))
     .then(_generateToken)
-    .then((user) => response.success(res, process.env.OK_STATUS, user))
+    .then((token) => response.success(res, process.env.OK_STATUS, token))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 
 module.exports = {
   registerUser,
   loginUser,
-};
+}

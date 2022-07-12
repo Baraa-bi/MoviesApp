@@ -14,7 +14,7 @@ const getAwards = function (req, res) {
   Game.findById(movieId)
     .then((movie) => response.success(res, process.env.OK_STATUS, movie.awards))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 const deleteAwards = function (req, res) {
   const { movieId } = req.params;
@@ -24,7 +24,7 @@ const deleteAwards = function (req, res) {
       saveMovie(res, movie)
     })
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 const addAward = function (req, res) {
   const { movieId } = req.params;
@@ -32,22 +32,19 @@ const addAward = function (req, res) {
   Movie.findById(movieId)
     .then((movie) => {
       movie.awards = (movie.awards ?? []).push(newAward);
-      movie
-        .save()
+      saveMovie(movie)
         .then((movie) => response.success(res, process.env.OK_STATUS, movie))
         .catch((error) => response.fail(res, error));
     })
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 const getAward = function (req, res) {
   const { awardId, movieId } = req.params;
   Game.findById(movieId)
-    .then((movie) =>
-      response.success(res, process.env.OK_STATUS, movie.awards.id(awardId))
-    )
+    .then((movie) => response.success(res, process.env.OK_STATUS, movie.awards.id(awardId)))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 const updateOne = function (req, res, updateType) {
   const { movieId, awardId } = req.params;
@@ -69,15 +66,15 @@ const updateOne = function (req, res, updateType) {
         .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
     })
     .catch((error) => response.fail(res, error));
-};
+}
 
 const fullUpdateAward = function (req, res) {
   updateOne(req, res, process.env.DOCUMENT_FULL_UPDATE);
-};
+}
 
 const partialUpdateAward = function (req, res) {
   updateOne(req, res, process.env.DOCUMENT_PARTIAL_UPDATE);
-};
+}
 
 const deleteAward = function (req, res) {
   const { movieId, awardId } = req.params;
@@ -90,7 +87,7 @@ const deleteAward = function (req, res) {
         .catch((error) => response.fail(res, error));
     })
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
-};
+}
 
 module.exports = {
   getAwards,
@@ -100,4 +97,4 @@ module.exports = {
   fullUpdateAward,
   partialUpdateAward,
   deleteAward,
-};
+}

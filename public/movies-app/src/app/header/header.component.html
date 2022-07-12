@@ -11,17 +11,21 @@
             <nav class="hidden md:flex space-x-10">
                 <a routerLink="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
                 <a routerLink="/movies" class="text-base font-medium text-gray-500 hover:text-gray-900">Movies</a>
-                <a routerLink="/newMovie" class="text-base font-medium text-gray-500 hover:text-gray-900"> New Movie
-                </a> 
+                <a routerLink="/search" class="text-base font-medium text-gray-500 hover:text-gray-900">Search</a>
+                <a *ngIf="isLoggedIn" routerLink="/newMovie" class="text-base font-medium text-gray-500 hover:text-gray-900"> New Movie
+                </a>
 
             </nav>
             <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a routerLink="/login"
+                <a *ngIf="!isLoggedIn" routerLink="/login"
                     class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in
                 </a>
-                <a routerLink="/register"
+                <a *ngIf="!isLoggedIn" routerLink="/register"
                     class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-500 hover:bg-green-700">
                     Sign up </a>
+                <a *ngIf="isLoggedIn" (click)="logout()"
+                    class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-500 hover:bg-rose-700">
+                    Logout </a>
             </div>
         </div>
     </div>

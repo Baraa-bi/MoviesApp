@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 import { MoviesService } from '../movies.service';
 
 export class Award {
@@ -30,6 +31,7 @@ export class MovieComponent implements OnInit {
 
   constructor(
     private _router: Router,
+    private _authenticationService:AuthenticationService,
     private _activatedRoute: ActivatedRoute,
     private _moviesService: MoviesService
   ) { }
@@ -56,5 +58,10 @@ export class MovieComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMovie();
+  }
+
+
+  get isLoggedIn() {
+    return this._authenticationService.isLoggedIn
   }
 }

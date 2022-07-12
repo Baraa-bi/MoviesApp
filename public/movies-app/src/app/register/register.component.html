@@ -36,7 +36,7 @@
 
                 <div class="pt-2">
                     <label for="name">Name</label>
-                    <input formControlName="name" id="name" name="email" required
+                    <input formControlName="name" id="name" required
                         class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                         placeholder="Name">
                     <div *ngIf="registerFormControl?.['name']?.invalid && (registerFormControl?.['name']?.dirty || registerFormControl?.['name']?.touched||submitted)"
@@ -49,7 +49,7 @@
                         <div class="text-rose-500 text-xs mt-2"
                             *ngIf="registerFormControl?.['name']?.errors?.['minlength']">
                             Name must be at least 4 characters long.
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="pt-2">
@@ -67,7 +67,7 @@
                         <div class="text-rose-500 text-xs mt-2"
                             *ngIf="registerFormControl?.['username']?.errors?.['minlength']">
                             Username must be at least 4 characters long.
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                         <div class="text-rose-500 text-xs mt-2"
                             *ngIf="registerFormControl?.['password']?.errors?.['minlength']">
                             password must be at least 4 characters long.
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>

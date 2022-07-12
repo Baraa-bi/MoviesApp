@@ -1,6 +1,8 @@
 import { NgForm } from '@angular/forms';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { UsersDataService } from '../users-data.service';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 export class Credentials {
   #username: String;
@@ -34,7 +36,7 @@ export class LoginComponent implements OnInit {
 
   user: Credentials = new Credentials("", "");
 
-  constructor(private _usersDataService: UsersDataService) { }
+  constructor(private _usersDataService: UsersDataService, private _router: Router, private _authenticationService: AuthenticationService) { }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -44,14 +46,16 @@ export class LoginComponent implements OnInit {
 
   onLogin(): void {
     this.submitted = true;
-    if (!this.loginForm.invalid) {
-      const loginCredentials = new Credentials(this.loginForm.value.username, this.loginForm.value.password)
-      this._usersDataService.login(loginCredentials).subscribe({
-        next: (loginResult) => {
-
-        }
+    if (!this.loginForm.invalid) { 
+      this._usersDataService.login(this.loginForm.value).subscribe({
+        next: (token: string) => this._login(token)
       })
     }
+  }
+
+  _login(token: string): void {
+    this._authenticationService.login(token);
+    this._router.navigate(['/']);
   }
 
 }

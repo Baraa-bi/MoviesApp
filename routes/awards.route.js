@@ -6,7 +6,7 @@ const {
   fullUpdateAward,
   partialUpdateAward,
   deleteAward,
-} = require("../controllers/awardsController");
+} = require("../controllers/awards.controller");
 
 router.route(process.env.MOVIE_AWARDS_ROUTE).get(getAwards).post(addAward);
 

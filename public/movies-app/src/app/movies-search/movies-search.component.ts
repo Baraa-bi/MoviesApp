@@ -1,28 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { AuthenticationService } from '../authentication.service';
 import { Movie } from '../movie/movie.component';
 import { MoviesService } from '../movies.service';
 
 @Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  selector: 'app-movies-search',
+  templateUrl: './movies-search.component.html',
+  styleUrls: ['./movies-search.component.css']
 })
-export class MoviesComponent implements OnInit {
+export class MoviesSearchComponent implements OnInit {
 
-  constructor(private moviesService: MoviesService, private _router: Router,private _authenticationService:AuthenticationService) { }
+  #searchForm!: FormGroup;
 
   movies!: Movie[];
   #page: number = 1;
   #totalPages: number = 1;
 
-
-  get isLoggedIn() {
-    return this._authenticationService.isLoggedIn
-  }
+  constructor(private moviesService: MoviesService, private _router: Router, private _formBuilder: FormBuilder) { }
 
   get page() { return this.#page }
   set page(page) { this.#page = page }
@@ -30,29 +26,44 @@ export class MoviesComponent implements OnInit {
   get totalPages() { return this.#totalPages }
   set totalPages(totalPages) { this.#totalPages = totalPages }
 
+
+  get searchForm() {
+    return this.#searchForm
+  }
+
+  get movieTitle() {
+    return this.#searchForm.value['movieTitle']
+  }
+
   getTotalResults = (): number => {
     return this.totalPages * + environment.find_count
   }
 
   getMovies = () => {
-    this.moviesService.getMovies(this.page).subscribe({
+    this.moviesService.getMovies(this.page, this.movieTitle).subscribe({
       next: (movies: Movie[]) => this.movies = movies
     })
   }
 
   getMoviesPageCount = () => {
-    this.moviesService.getMoviesPageCount().subscribe({
+    this.moviesService.getMoviesPageCount(this.movieTitle).subscribe({
       next: (totalPages: number) => this.totalPages = totalPages
     })
   }
 
   ngOnInit(): void {
-    this.getMovies();
-    this.getMoviesPageCount();
+    this.#searchForm = this._formBuilder.group({
+      movieTitle: ''
+    })
   }
 
   onMovieClick(movieId: string) {
     this._router.navigate(['movie/' + movieId]);
+  }
+
+  onSearchClick() {
+    this.getMoviesPageCount();
+    this.getMovies();
   }
 
   onNextPageClick() {
@@ -65,7 +76,7 @@ export class MoviesComponent implements OnInit {
   onPreviousPageClick() {
     if (this.page > 1) {
       this.page = this.page - 1;
-      this.getMovies()
+      this.getMovies();
     }
   }
 

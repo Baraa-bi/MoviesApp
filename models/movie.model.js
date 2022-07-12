@@ -16,7 +16,7 @@ const movieSchema = mongoose.Schema({
   },
   numberOfDirectors: {
     min: 1,
-    max: 20,
+    max: 3000,
     type: Number,
     required: true,
   },

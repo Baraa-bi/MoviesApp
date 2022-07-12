@@ -52,10 +52,10 @@ export class MovieFormComponent implements OnInit {
             }))
           })
           this.#movieForm = this._formBuilder.group({
-            title: movie.title,
-            image: movie.image,
-            description: movie.description,
-            numberOfDirectors: movie.numberOfDirectors,
+            title: [movie.title, Validators.required],
+            image: [movie.image, Validators.required],
+            description: [movie.description, Validators.required],
+            numberOfDirectors: [movie.numberOfDirectors, Validators.required],
             awards: this.awards
           });
         },
