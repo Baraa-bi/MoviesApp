@@ -9,7 +9,7 @@ This Movies application shows movies and it's awards.
 
 2. npm run init -> it will import the database to your machine
 
-3. npm start -> database will be imported and backend/frontend will be running.
+3. npm start -> backend/frontend will be running.
 
 4. navigate to localhost:4200
 
