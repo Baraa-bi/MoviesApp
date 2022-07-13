@@ -7,11 +7,13 @@ This Movies application shows movies and it's awards.
 
 1. run npm install in node and angular -> public/movies-app
 
-2. then npm start -> database will be imported and backend/frontend will be running.
+2. npm run init -> it will import the database to your machine
 
-3. navigate to localhost:4200
+3. npm start -> backend/frontend will be running.
 
-4. Hope you enjoy :)
+4. navigate to localhost:4200
+
+5. Hope you enjoy :)
 
 
-![Alt text](https://i.ibb.co/G7tXwHF/Screenshot-2022-07-11-at-21-36-24.png)
+![Alt text](https://i.ibb.co/H4MkFD9/Screenshot-2022-07-12-at-18-07-39.png)
