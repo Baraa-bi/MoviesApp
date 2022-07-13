@@ -33,9 +33,10 @@ const _checkUserPassword = (password, user) => {
   })
 }
 
-const _generateToken = (user) => { 
+const _generateToken = (user) => {
   const jwtSign = util.promisify(jwt.sign);
-  return jwtSign({ name: user.name }, process.env.JWT_PRIVATE_KEY, { expiresIn: 3600 });
+  const expiresIn = parseInt(process.env.TOKEN_EXPIRATION_IN_SECONDS, process.env.BASE_10);
+  return jwtSign({ name: user.name }, process.env.JWT_PRIVATE_KEY, { expiresIn });
 }
 
 const registerUser = function (req, res) {
@@ -51,7 +52,6 @@ const registerUser = function (req, res) {
 
 const loginUser = function (req, res) {
   const { username, password } = req.body;
-  console.log(req.body)
   User.findOne({ username })
     .then((user) => _checkUserPassword(password, user))
     .then(_generateToken)

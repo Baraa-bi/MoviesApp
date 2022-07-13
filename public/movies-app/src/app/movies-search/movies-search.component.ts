@@ -36,7 +36,7 @@ export class MoviesSearchComponent implements OnInit {
   }
 
   getTotalResults = (): number => {
-    return this.totalPages * + environment.find_count
+    return this.totalPages * +environment.find_count
   }
 
   getMovies = () => {

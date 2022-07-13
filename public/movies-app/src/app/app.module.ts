@@ -72,7 +72,7 @@ import { MoviesSearchComponent } from './movies-search/movies-search.component';
         path: '**',
         component: PageNotFoundComponent,
       },
-    ], { scrollPositionRestoration: 'enabled' })
+    ])
   ],
   providers: [
     {

@@ -7,10 +7,7 @@ import { JwtHelperService } from '@auth0/angular-jwt'
 export class AuthenticationService {
 
   get isLoggedIn() {
-    if (this.token?.length) {
-      return true;
-    }
-    return false
+    return this.token?.length
   }
 
   get name() { return this._jwtService.decodeToken(this.token)?.name as string }
@@ -18,11 +15,11 @@ export class AuthenticationService {
   get token() { return localStorage.getItem(environment.token) as string }
   set token(token: string) { localStorage.setItem(environment.token, token) }
 
-  logout() {
+  logout(): void {
     localStorage.clear();
   }
 
-  login(token: string) {
+  login(token: string): void {
     this.token = token;
   }
 

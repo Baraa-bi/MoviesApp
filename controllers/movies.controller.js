@@ -67,8 +67,7 @@ const updateOne = function (req, res, updateType) {
   const { movieId } = req.params;
   Movie.findById(movieId).then((movie) => {
     movie = updateDocumentWithFields(movie, req.body, MOVIE_FIELDS, updateType);
-    movie
-      .save()
+    movie.save()
       .then((movie) => response.success(res, process.env.OK_STATUS, movie))
       .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
   });

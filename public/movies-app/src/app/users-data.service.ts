@@ -7,7 +7,6 @@ import { Credentials } from './login/login.component';
 @Injectable({
   providedIn: 'root',
 })
-
 export class UsersDataService {
   constructor(private _http: HttpClient) { }
 

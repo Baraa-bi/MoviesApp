@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { AuthenticationService } from './authentication.service';
 import { Movie } from './movie/movie.component';
@@ -18,7 +19,7 @@ export class MoviesService {
     }
   }
 
-  getMovies(page: number, movieTitle: string = '') {
+  getMovies(page: number, movieTitle: string = ''): Observable<Movie[]> {
     const url = environment.movies_base_url;
     return this._http.get<Movie[]>(url, {
       params: {
@@ -28,7 +29,7 @@ export class MoviesService {
     });
   }
 
-  getMoviesPageCount(movieTitle: string = '') {
+  getMoviesPageCount(movieTitle: string = ''): Observable<number> {
     const url = environment.movies_base_url + '/count'
     return this._http.get<number>(url, {
       params: {
@@ -37,23 +38,23 @@ export class MoviesService {
     });
   }
 
-  getMovie(movieId: String) {
+  getMovie(movieId: String): Observable<Movie> {
     const url = `${environment.movies_base_url}/${movieId}`;
     return this._http.get<Movie>(url);
   }
 
-  addMovie(data: String) {
+  addMovie(data: String): Observable<Movie> {
     const url = environment.movies_base_url;
-    return this._http.post<Movie>(url, data);
+    return this._http.post<Movie>(url, data, this.options);
   }
 
-  updateMovie(movieId: string, data: String) {
+  updateMovie(movieId: string, data: String): Observable<Movie> {
     const url = `${environment.movies_base_url}/${movieId}`;
     return this._http.patch<Movie>(url, data, this.options);
   }
 
-  deleteMovie(movieId: String) {
+  deleteMovie(movieId: String): Observable<Movie> {
     const url = `${environment.movies_base_url}/${movieId}`;
-    return this._http.delete(url, this.options);
+    return this._http.delete<Movie>(url, this.options);
   }
 }

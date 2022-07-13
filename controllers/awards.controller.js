@@ -5,9 +5,6 @@ const { getObjectWithFields, updateDocumentWithFields } = require("../helpers");
 const response = require("../helpers/response");
 const FIELDS = ["title", "year"];
 
-const saveMovie = (movie) => {
-  return movie.save()
-}
 
 const getAwards = function (req, res) {
   const { movieId } = req.params;
@@ -21,8 +18,9 @@ const deleteAwards = function (req, res) {
   Game.findById(movieId)
     .then((movie) => {
       movie.awards = [];
-      saveMovie(res, movie)
+      return movie.save()
     })
+    .then((movie) => response.success(res, process.env.OK_STATUS, movie))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
 }
 
@@ -32,10 +30,9 @@ const addAward = function (req, res) {
   Movie.findById(movieId)
     .then((movie) => {
       movie.awards = (movie.awards ?? []).push(newAward);
-      saveMovie(movie)
-        .then((movie) => response.success(res, process.env.OK_STATUS, movie))
-        .catch((error) => response.fail(res, error));
+      return movie.save()
     })
+    .then((movie) => response.success(res, process.env.OK_STATUS, movie))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
 }
 
@@ -56,16 +53,15 @@ const updateOne = function (req, res, updateType) {
         FIELDS,
         updateType
       );
-      Movie.findOneAndUpdate(
+      return Movie.findOneAndUpdate(
         { _id: movieId, "awards._id": awardId },
         {
           $set: { "awards.$": award },
         }
       )
-        .then((movie) => handleResponse(res, process.env.OK_STATUS, err, movie))
-        .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
     })
-    .catch((error) => response.fail(res, error));
+    .then((movie) => handleResponse(res, process.env.OK_STATUS, err, movie))
+    .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
 }
 
 const fullUpdateAward = function (req, res) {
@@ -81,11 +77,9 @@ const deleteAward = function (req, res) {
   Movie.findById(movieId)
     .then((movie) => {
       movie.awards.id(awardId).remove();
-      movie
-        .save()
-        .then((movie) => response.success(res, process.env.OK_STATUS, movie))
-        .catch((error) => response.fail(res, error));
+      return movie.save()
     })
+    .then((movie) => response.success(res, process.env.OK_STATUS, movie))
     .catch((error) => response.fail(res, process.env.ERROR_STATUS, error));
 }
 

@@ -1,11 +1,11 @@
 <div class="bg-gray-50 py-10 justify-center flex flex-col">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block">Ready to check our Movies?</span>
-        <span class="self-center center text-center text-green-500">More than 100K Movies.</span>
-      </h2>
+        <h2 class="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="block">Ready to check our Movies?</span>
+            <span class="self-center center text-center text-green-500">More than 100K Movies.</span>
+        </h2>
     </div>
-    <form class='w-3/6	 max-w-2xl self-center'[formGroup]="searchForm" (ngSubmit)="onSearchClick()">
+    <form class='w-3/6	 max-w-2xl self-center' [formGroup]="searchForm" (ngSubmit)="onSearchClick()">
         <div class="max-w-7xl flex">
             <div class="relative w-full">
                 <input formControlName="movieTitle" id="movieTitle" type="search"
@@ -21,7 +21,7 @@
             </div>
         </div>
     </form>
-  </div>
+</div>
 
 <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-5xl lg:px-8">
     <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -35,7 +35,8 @@
             <p class="mt-1 text-lg font-medium text-gray-900">{{movie.title}}</p>
         </a>
     </div>
-    <div *ngIf="movies" class="mt-4 bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+    <div *ngIf="movies"
+        class="mt-4 bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
         <div class="flex-1 flex justify-between sm:hidden">
             <a routerLink="/movies/#"
                 class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
@@ -50,7 +51,7 @@
                     Showing
                     <span class="font-medium">{{1}}</span>
                     to
-                    <span class="font-medium">8</span>
+                    <span class="font-medium">{{getTotalResults()}}</span>
                     of
                     <span class="font-medium">{{getTotalResults()}}</span>
                     results

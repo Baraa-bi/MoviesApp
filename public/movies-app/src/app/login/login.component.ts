@@ -46,6 +46,7 @@ export class LoginComponent implements OnInit {
 
   onLogin(): void {
     this.submitted = true;
+    console.log(this.loginForm.value);
     if (!this.loginForm.invalid) { 
       this._usersDataService.login(this.loginForm.value).subscribe({
         next: (token: string) => this._login(token)
